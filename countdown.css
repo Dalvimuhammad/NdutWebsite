@@ -1,0 +1,169 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+* {
+  font-family: "Libre Bodoni", serif;
+}
+
+.nav-item a{
+  margin-right: 80px;
+  font-size: 23px;
+  color: white;
+}
+.nav-item a:hover {
+  color: #d63384;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.navbar-brand:hover {
+  color: #d63384;
+}
+
+.nav-link.active {
+  color: #d63384 !important;
+}
+
+#home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 7;
+
+}
+section {
+    position: relative; /* Membuat elemen section sebagai referensi posisi */
+    z-index: 1; /* Memastikan elemen ini berada di depan */
+  }
+  
+  .img-bg {
+    position: absolute; /* Menempatkan div ini pada posisi absolut */
+    top: 0; /* Atur posisi di bagian atas */
+    left: 0; /* Atur posisi di bagian kiri */
+    width: 100%; /* Memastikan elemen mencakup seluruh lebar */
+    height: 100%; /* Memastikan elemen mencakup seluruh tinggi */
+    z-index: 0; /* Membuat elemen ini berada di belakang */
+    overflow: hidden; /* Mencegah elemen meluap */
+  }
+  
+  .img-bg img {
+    width: 100%; /* Memastikan gambar mencakup seluruh lebar */
+    height: 100%; /* Memastikan gambar mencakup seluruh tinggi */
+    object-fit: cover; /* Menjaga rasio gambar sambil mencakup elemen */
+  }
+  
+.content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: 150vh; /* Sesuaikan tinggi section dengan viewport */
+}
+
+.countdown {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 20px 50px;
+    border-radius: 20px;
+    color: wheat;
+    width: 1000px;
+}
+
+.countdown h1 {
+    font-size: 30px;
+}
+
+#demo {
+    color: white;
+    border: 1px solid white;
+    font-size: 32px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .countdown h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .countdown {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 15px;
+    border-radius: 20px;
+    color: wheat;
+    width: 750px;
+  }
+  #demo {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .countdown h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .countdown {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 15px;
+    border-radius: 20px;
+    color: wheat;
+    width: 600px;
+  }
+  #demo {
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .countdown h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .countdown {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 10px;
+    border-radius: 20px;
+    color: wheat;
+    width: 500px;
+  }
+  #demo {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .countdown h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .countdown {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 10px;
+    border-radius: 20px;
+    color: wheat;
+    width: 350px;
+  }
+  #demo {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
