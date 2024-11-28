@@ -180,3 +180,74 @@ video {
     align-items: end;
     gap: 4px;
 }
+
+@media only screen and (max-width: 480px) {
+    #ending{
+        padding: 16px 35px;
+    }
+
+    .card {
+        width: 300px;
+    }
+    .blockquote {
+        font-size: 15px;
+    }
+
+    .img-grid img {
+        width: 100%;
+    }
+
+    .swiper .cek {
+        position: absolute;
+        margin-bottom: 20px;
+        margin-right: 30px;
+    }
+
+    .btn-text {
+        font-size: 10px;
+    }
+
+    .swiper .happy {
+        margin-bottom: 60px;
+    }
+
+    .happy h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .happy h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        color: #d63384 ;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .navbar-toggler {
+        width: 30px; /* Ubah lebar tombol */
+        height: 30px; /* Ubah tinggi tombol */
+        padding: 5px; /* Kurangi padding */
+      }
+      .navbar-toggler-icon {
+        width: 20px; /* Ubah ukuran ikon */
+        height: 20px; /* Ubah ukuran ikon */
+      }
+
+      .navbar-costume{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 0;
+        border-radius: 0px 0px 20px 20px;
+    }
+      .navbar-nav {
+        float: left;
+      }
+      .nav-item a {
+        font-size: 17px;
+      }
+
+
+}
